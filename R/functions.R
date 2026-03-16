@@ -30,10 +30,6 @@ genRaw <- function(L, M, rho, n){
   return(X)
 }
 
-library(MASS)
-library(glmnet)
-library(quantreg)
-library(robustbase)
 
 mvmr_med_boot = function(bx, sebx, by, seby, N){
   est = sapply(1:N, function(i){
@@ -114,7 +110,6 @@ mvmr_robust = function(bx, by, seby, k.max = 500, maxit.scale = 500){
   se = summary(robmod)$coef[, 2] / min(summary(robmod)$sigma, 1)
   return(list("coefficients" = coefficients, "se" = se))
 }
-library(R2jags)
 
 mr_horse_model = function() {
   for (i in 1:N){

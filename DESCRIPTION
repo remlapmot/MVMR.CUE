@@ -11,11 +11,20 @@ Description: Multivariable Mendelian randomization accounting for complex
     correlated horizontal pleiotropy while elucidating shared genetic
     etiology.
 License: GPL (>= 3)
-Depends: 
+Depends:
     R (>= 2.10)
-Imports: 
-    Rcpp (>= 1.0.13)
-LinkingTo: 
+Imports:
+    coda,
+    glmnet,
+    MASS,
+    MendelianRandomization,
+    mvtnorm,
+    quantreg,
+    R2jags,
+    Rcpp (>= 1.0.13),
+    robustbase,
+    stats
+LinkingTo:
     Rcpp,
     RcppArmadillo
 Encoding: UTF-8
