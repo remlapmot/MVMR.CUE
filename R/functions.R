@@ -1,4 +1,5 @@
 
+utils::globalVariables(c("N", "K", "T", "a", "alpha", "b", "bx0", "d", "inprod", "r", "theta", "vx0"))
 
 genRaw <- function(L, M, rho, n){
   maf = runif(M*L, 0.05, 0.5);
