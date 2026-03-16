@@ -2,7 +2,7 @@ Type: Package
 Package: MVMR.CUE
 Title: Multivariable Mendelian randomization accounting for complex
     correlated horizontal pleiotropy while elucidating shared genetic
-    etiology.
+    etiology
 Version: 1.0
 Authors@R: 
     person("Qing", "Cheng", , "qingcheng0218@gmail.com", role = c("aut", "cre"),
